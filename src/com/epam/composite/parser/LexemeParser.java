@@ -1,27 +1,27 @@
 package com.epam.composite.parser;
 
-import com.epam.composite.entity.ComponentLevel;
-import com.epam.composite.entity.Composite;
+import com.epam.composite.entity.TextComponentLevel;
+import com.epam.composite.entity.TextComposite;
 
-public class LexemeParser extends AbstractParser{
+public class LexemeParser extends AbstractTextParser {
 
-    private static final String DELIMITER = ComponentLevel.LEXEME.getDelimiter();
+    private static final String DELIMITER = TextComponentLevel.LEXEME.getDelimiter();
 
     public LexemeParser() {
         super(new WordNumberMarkParser());
     }
 
     @Override
-    public Composite handleRequest(String data) {
+    public TextComposite handleRequest(String data) {
         String[] lexemes = data.trim().split(DELIMITER);
-        Composite lexemeComposite = new Composite(ComponentLevel.LEXEME);
+        TextComposite lexemeTextComposite = new TextComposite(TextComponentLevel.LEXEME);
 
         for (String lexeme :
                 lexemes) {
-            Composite nextLexeme = super.getSuccessor().handleRequest(lexeme);
-            lexemeComposite.add(nextLexeme);
+            TextComposite nextLexeme = super.getSuccessor().handleRequest(lexeme);
+            lexemeTextComposite.add(nextLexeme);
         }
 
-        return lexemeComposite;
+        return lexemeTextComposite;
     }
 }

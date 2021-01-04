@@ -1,27 +1,27 @@
 package com.epam.composite.parser;
 
-import com.epam.composite.entity.ComponentLevel;
-import com.epam.composite.entity.Composite;
-public class SentenceParser extends AbstractParser {
+import com.epam.composite.entity.TextComponentLevel;
+import com.epam.composite.entity.TextComposite;
+public class SentenceParser extends AbstractTextParser {
 
-    private static final String DELIMITER = ComponentLevel.SENTENCE.getDelimiter();
+    private static final String DELIMITER = TextComponentLevel.SENTENCE.getDelimiter();
 
     public SentenceParser() {
         super(new LexemeParser());
     }
 
     @Override
-    public Composite handleRequest(String data) {
+    public TextComposite handleRequest(String data) {
 
         String[] sentences = data.trim().split(DELIMITER);
-        Composite sentenceComposite = new Composite(ComponentLevel.SENTENCE);
+        TextComposite sentenceTextComposite = new TextComposite(TextComponentLevel.SENTENCE);
 
         for (String sentence :
                 sentences) {
-            Composite nextSentence = super.getSuccessor().handleRequest(sentence);
-            sentenceComposite.add(nextSentence);
+            TextComposite nextSentence = super.getSuccessor().handleRequest(sentence);
+            sentenceTextComposite.add(nextSentence);
         }
 
-        return sentenceComposite;
+        return sentenceTextComposite;
     }
 }

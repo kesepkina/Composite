@@ -1,16 +1,16 @@
 package com.epam.composite.parser;
 
-import com.epam.composite.entity.Composite;
+import com.epam.composite.entity.TextComposite;
 
-public class TextParser extends AbstractParser{
+public class TextParser extends AbstractTextParser {
 
     public TextParser() {
         super(new ParagraphParser());
     }
 
     @Override
-    public Composite handleRequest(String data) {
-        Composite text = super.getSuccessor().handleRequest(data);
+    public TextComposite handleRequest(String data) {
+        TextComposite text = super.getSuccessor().handleRequest(data);
         return text;
     }
 }

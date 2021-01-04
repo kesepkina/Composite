@@ -9,7 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class CustomFileReader {
+public class TextFileReader {
 
     private static final Logger log = LogManager.getLogger();
     private static final String DEFAULT_PATH = "res/data/default.txt";

@@ -1,6 +1,6 @@
 package com.epam.composite.entity;
 
-public enum ComponentLevel {
+public enum TextComponentLevel {
     PARAGRAPH ("\n\t", "\t"),
     SENTENCE (" ", ""),
     LEXEME (" ", ""),
@@ -11,7 +11,7 @@ public enum ComponentLevel {
     private final String delimiter;
     private final String prefix;
 
-    ComponentLevel(String delimiter, String prefix) {
+    TextComponentLevel(String delimiter, String prefix) {
         this.delimiter = delimiter;
         this.prefix = prefix;
     }

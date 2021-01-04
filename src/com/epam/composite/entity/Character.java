@@ -1,12 +1,12 @@
 package com.epam.composite.entity;
 
-public class Character extends Component{
+public class Character extends TextComponent {
     private char character;
     private CharacterType type;
 
 
     public Character(char character, CharacterType type) {
-        super(ComponentLevel.NOTHING);
+        super(TextComponentLevel.NOTHING);
         this.character = character;
         this.type = type;
     }
@@ -15,8 +15,8 @@ public class Character extends Component{
         return type;
     }
 
-    public ComponentLevel getComponentLevel() {
-        return componentLevel;
+    public TextComponentLevel getComponentLevel() {
+        return textComponentLevel;
     }
 
     @Override

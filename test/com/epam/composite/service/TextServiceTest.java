@@ -1,22 +1,20 @@
 package com.epam.composite.service;
 
-import com.epam.composite.entity.Composite;
+import com.epam.composite.entity.TextComposite;
 import com.epam.composite.exception.ReaderException;
 import com.epam.composite.parser.TextParser;
-import com.epam.composite.reader.CustomFileReader;
+import com.epam.composite.reader.TextFileReader;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
 
 public class TextServiceTest {
 
     TextService service = new TextService();
-    Composite textComposite;
+    TextComposite textComposite;
 
     @BeforeMethod
     public void test() throws ReaderException {
-        String text = new CustomFileReader().readFromTxtFile("data/default.txt");
+        String text = new TextFileReader().readFromTxtFile("data/default.txt");
         textComposite = new TextParser().handleRequest(text);
     }
 
