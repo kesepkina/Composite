@@ -1,0 +1,9 @@
+2021-01-04 01:09:42 [main] DEBUG com.epam.composite.parser.LetterFigureParser - Letters and figures are parsed.
+2021-01-04 01:09:42 [main] DEBUG com.epam.composite.parser.WordNumberMarkParser - Words/Numbers and Marks are parsed.
+2021-01-04 01:09:42 [main] DEBUG com.epam.composite.parser.LexemeParser - Lexemes are parsed.
+2021-01-04 01:09:42 [main] DEBUG com.epam.composite.parser.SentenceParser - Sentences are parsed.
+2021-01-04 01:09:42 [main] DEBUG com.epam.composite.parser.ParagraphParser - Paragraphs are parsed.
+2021-01-04 01:26:41 [main] INFO  com.epam.composite.reader.CustomFileReader - File "data/default.txt" doesn't exist. Default file was used.
+2021-01-04 01:28:07 [main] INFO  com.epam.composite.reader.CustomFileReader - File "data/default.txt" doesn't exist. Default file was used.
+2021-01-04 01:31:11 [main] INFO  com.epam.composite.reader.CustomFileReader - File "data/default.txt" doesn't exist. Default file was used.
+2021-01-04 01:36:12 [main] INFO  com.epam.composite.reader.CustomFileReader - File "data/default.txt" doesn't exist. Default file was used.

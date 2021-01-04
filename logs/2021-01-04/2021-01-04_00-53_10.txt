@@ -1,0 +1,9 @@
+2021-01-04 00:53:58 [main] DEBUG com.epam.composite.parser.LetterFigureParser - Letters and figures are parsed.
+2021-01-04 00:53:58 [main] DEBUG com.epam.composite.parser.WordNumberMarkParser - Words/Numbers and Marks are parsed.
+2021-01-04 00:53:58 [main] DEBUG com.epam.composite.parser.LetterFigureParser - Letters and figures are parsed.
+2021-01-04 00:53:58 [main] DEBUG com.epam.composite.parser.WordNumberMarkParser - Words/Numbers and Marks are parsed.
+2021-01-04 00:53:58 [main] DEBUG com.epam.composite.parser.LetterFigureParser - Letters and figures are parsed.
+2021-01-04 00:53:58 [main] DEBUG com.epam.composite.parser.WordNumberMarkParser - Words/Numbers and Marks are parsed.
+2021-01-04 00:53:58 [main] DEBUG com.epam.composite.parser.LetterFigureParser - Letters and figures are parsed.
+2021-01-04 00:53:58 [main] DEBUG com.epam.composite.parser.WordNumberMarkParser - Words/Numbers and Marks are parsed.
+2021-01-04 00:53:58 [main] DEBUG com.epam.composite.parser.LetterFigureParser - Letters and figures are parsed.
