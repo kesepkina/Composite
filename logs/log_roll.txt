@@ -1,1 +1,0 @@
-2021-01-04 02:38:37 [main] INFO  com.epam.composite.reader.CustomFileReader - File "data/default.txt" doesn't exist. Default file was used.
