@@ -14,5 +14,4 @@ public enum CompositeComparator implements Comparator<TextComposite> {
             return Integer.compare(list1Size, list2Size);
         }
     }
-
 }

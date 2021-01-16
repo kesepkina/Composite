@@ -7,5 +7,9 @@ public abstract class TextComponent {
         this.textComponentLevel = textComponentLevel;
     }
 
+    public TextComponentLevel getTextComponentLevel() {
+        return textComponentLevel;
+    }
+
     abstract String buildText();
 }

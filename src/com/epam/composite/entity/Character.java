@@ -1,13 +1,12 @@
 package com.epam.composite.entity;
 
 public class Character extends TextComponent {
-    private char character;
-    private CharacterType type;
+    private final char value;
+    private final CharacterType type;
 
-
-    public Character(char character, CharacterType type) {
+    public Character(char value, CharacterType type) {
         super(TextComponentLevel.NOTHING);
-        this.character = character;
+        this.value = value;
         this.type = type;
     }
 
@@ -21,6 +20,6 @@ public class Character extends TextComponent {
 
     @Override
     public String buildText() {
-        return String.valueOf(character);
+        return String.valueOf(value);
     }
 }
