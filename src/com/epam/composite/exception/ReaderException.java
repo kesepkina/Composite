@@ -1,14 +1,6 @@
 package com.epam.composite.exception;
 
-public class ReaderException extends Exception{
-    public ReaderException() {
-        super();
-    }
-
-    public ReaderException(String message) {
-        super(message);
-    }
-
+public class ReaderException extends Exception {
     public ReaderException(String message, Throwable cause) {
         super(message, cause);
     }

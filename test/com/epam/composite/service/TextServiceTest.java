@@ -23,7 +23,7 @@ public class TextServiceTest {
     }
 
     @Test
-    public void testSortParagraphsByNumberOfSentences() throws ClassNotFoundException {
+    public void testSortParagraphsByNumberOfSentences() {
         System.out.println("---Before:----------\n" + textComposite.buildText());
         service.sortParagraphsByNumberOfSentences(textComposite);
         System.out.println("\n---After:----------\n" + textComposite.buildText());
@@ -31,8 +31,7 @@ public class TextServiceTest {
 
     @Test
     public void testFindSentencesWithTheLargestWord() {
-        List<TextComposite<?>> sentences = null;
-        sentences = service.findSentencesWithTheLargestWord(textComposite);
+        List<TextComposite<?>> sentences = service.findSentencesWithTheLargestWord(textComposite);
         System.out.println("Sentences with the largest words:");
         sentences.forEach(sentence -> System.out.println(sentence.buildText()));
     }
